@@ -1,0 +1,21 @@
+{
+    "name":"PresideCMS Extension: Empty Email Layouts",
+    "type":"preside-extensions",
+    "version":"$VERSION_NUMBER",
+    "location":"$DOWNLOAD_URL",
+    "private":false,
+    "author":"Pixl8 Group",
+    "directory":"application/extensions",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/pixl8/preside-ext-empty-email-layouts"
+    },
+    "slug":"preside-ext-empty-email-layouts",
+    "projectURL":"https://github.com/pixl8/preside-ext-empty-email-layouts",
+    "ignore":[
+        ".git/*",
+        ".gitignore",
+        ".github/*",
+        ".twgit_features_subject"
+    ]
+}
