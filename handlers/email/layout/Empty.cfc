@@ -2,7 +2,6 @@ component {
 
 	private string function html( event, rc, prc, args={} ) {
 		var layoutHtml = args.layout_html ?: "";
-		var layouthead = args.layout_head ?: "";
 
 		if ( Len( Trim( layoutHtml ) ) ) {
 			layoutHtml = ReplaceNoCase( layoutHtml, "${body}"           , ( args.body            ?: "" ) );
@@ -13,14 +12,7 @@ component {
 			args.body = layoutHtml;
 		}
 
-		if ( Len( Trim( layouthead ) ) ) {
-			args.body = renderView( view="/email/layout/empty/htmlWithHead", args={
-				  body = args.body
-				, head = layouthead
-			} );
-		}
-
-		return args.body;
+		return renderView( view="/email/layout/empty/html", args=args );
 	}
 
 	private string function text( event, rc, prc, args={} ) {
