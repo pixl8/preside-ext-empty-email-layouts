@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+* Add optional custom <head> content
+
 ## 0.1.1
 
 * Include `unsubscribe_link` variable for replacement of layout vars when rendering the full email
