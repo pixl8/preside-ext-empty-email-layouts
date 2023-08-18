@@ -4,7 +4,7 @@ The Empty Email Layout extension provides you with just that - an empty email la
 
 You can use this to configure completely custom HTML layouts.
 
-Currently in alpha.
+As of 0.1.2, you may also include code to be included in the emnail's <head> section.
 
 
 ## License
