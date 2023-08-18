@@ -12,7 +12,7 @@ component {
 			args.body = layoutHtml;
 		}
 
-		return args.body;
+		return renderView( view="/email/layout/empty/html", args=args );
 	}
 
 	private string function text( event, rc, prc, args={} ) {
